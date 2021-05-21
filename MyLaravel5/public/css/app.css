@@ -22,3 +22,12 @@ body {
   color: white;
 }
 
+.container {
+  display: flex;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+}
+

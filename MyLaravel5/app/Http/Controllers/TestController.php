@@ -10,11 +10,25 @@ class TestController extends Controller {
 
   public function home() {
 
-    $movies = Movies::all();
-    dd($movies);
-    // return view("pages.home");
+    $movies = Movie::all();
+    // dd($movies);
+    return view("pages.home", compact("movies") );
 
   } // END OF HOME FUNCTION
+
+  public function film($id) {
+    // MI ricopio tuttoi il database
+    $movies = Movie::all();
+    // dd($movies);
+    // mi seleziono solo l`elemento attivo
+    $movier_active = $movies[$id];
+    // visulizzo
+    // dd($movier_active);
+
+    return view("pages.film", compact("movier_active"));
+
+  } // END OF FILM FUNCTION
+
 
 }
 

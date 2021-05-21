@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route:: get('pages/home', 'TestController@home');
+
+Route:: get('pages/film/{id}', 'TestController@film') -> name("singleFilm");
