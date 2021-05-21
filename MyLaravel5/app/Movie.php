@@ -4,11 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
+class Movies extends Model
 {
-  $public $table = "movies";
+  public $table = "movies";
   // MOVIES E' IL NOME DEL DATABASE
 }
-
-// $mavies = Movies::all();
-// dd($movies);
