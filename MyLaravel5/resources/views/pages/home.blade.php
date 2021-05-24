@@ -9,7 +9,7 @@
       <ul>
         @foreach ($movies as $elem)
         <li>
-          <a href="{{ route('singleFilm', $elem -> id)}}">
+          <a href="{{ route('singleFilm', $elem -> id-1)}}">
             {{ $elem -> id }}
             {{ $elem -> title }}
           </a>

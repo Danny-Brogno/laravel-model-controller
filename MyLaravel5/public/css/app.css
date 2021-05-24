@@ -24,10 +24,16 @@ body {
 
 .container {
   display: flex;
+  font-size: 50px;
 }
 
 .container ul {
   display: flex;
   flex-direction: column;
+}
+
+.otherPage {
+  display: flex;
+  font-size: 50px;
 }
 
